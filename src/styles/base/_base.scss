@@ -1,0 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  
+  background: url('https://source.unsplash.com/-YHSwy6uqvk/1080x720') no-repeat center center fixed;
+  background-size: cover;
+  font-family: $sans;
+}
+
+h1 {
+  font-size: $m-size;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

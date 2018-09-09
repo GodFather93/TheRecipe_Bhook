@@ -1,0 +1,88 @@
+.modal {
+  background-color: $steak;
+  color: white;
+  width: 80%;
+  max-width: 100rem;
+  outline: none;
+  padding: $l-size;
+}
+
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal__title {
+  color: $table;
+  font-family: $cursive;
+  font-size: $l-size;
+  margin: 0 0 $m-size 0;
+  text-align: center;
+}
+
+
+.modal__body {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 $xl-size 0;
+  word-break: break-all;
+}
+
+.modal__label {
+  font-weight: bolder;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: $xxs-size 0;
+
+}
+
+.modal__text-input {
+  display: block;
+  width: 100%;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+
+}
+
+.modal__confirm-button {
+  background-color: $lettuce;
+  border: 0;
+  border-bottom: 3px solid darken($lettuce, 10%);
+  color: $dark-blue;
+  cursor: pointer;
+  font-family: $cursive;
+  font-size: $l-size;
+  font-weight: bolder;
+  padding: $xxs-size;
+  margin-top: $xs-size;
+  width: 100%;
+}
+
+.modal__reject-button {
+  background-color: $strawb;
+  border: 0;
+  border-bottom: 3px solid darken($strawb, 10%);
+  color: $dark-blue;
+  cursor: pointer;
+  font-family: $cursive;
+  font-size: $l-size;
+  font-weight: bolder;
+  padding: $xxs-size;
+  margin-top: $xs-size;
+  width: 100%;
+}

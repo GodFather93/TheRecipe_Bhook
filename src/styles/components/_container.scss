@@ -1,0 +1,28 @@
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 $m-size;
+}
+
+.container__add-recipe-button {
+  background-color: $lettuce;
+  border: 0;
+  border-bottom: 3px solid darken($lettuce, 10%);
+  color: $dark-blue;
+  cursor: pointer;
+  font-family: $cursive;
+  font-size: $l-size;
+  font-weight: bolder;
+  margin-top: $xs-size;
+  padding: $xxs-size;
+  width: 100%;
+}
+
+.container_date {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding:  $m-size;
+  margin-left: 10;
+  color: $dark-blue;
+
+}

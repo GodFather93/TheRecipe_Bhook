@@ -1,0 +1,59 @@
+.recipe__button {
+  background-color: $steak;
+  border: 0;
+  border-bottom: 3px solid darken($steak, 10%);
+  color: $table;
+  font-size: $m-size;
+  font-weight: bolder;
+  // margin-left: $xxs-size;
+  margin-bottom: $xxs-size;
+  padding: $xxs-size $xs-size;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.recipe__button-bar {
+  justify-content: space-between;
+  border: none;
+  display: flex;
+}
+
+.recipe__edit {
+  width: 49%;
+}
+
+.recipe__delete {
+  width: 49%;
+}
+
+.recipe__list-item {
+  background-color: lighten($table, 20%);
+  color: darken($steak, 10%);
+  font-size: $m-size;
+  font-weight: bolder;
+  opacity: 0.9;
+  padding: $xs-size;
+  list-style-type: none;
+  margin: 0;
+}
+
+.recipe__list-item:nth-child(even) {
+  background-color: lighten($table, 10%);
+}
+
+.recipe__name {
+  align-content: left;
+  background-color: $table;
+  border: 0;
+  border-bottom: 3px solid darken($table, 10%);
+  color: $steak;
+  cursor: pointer;
+  display: flex;
+  font-family: $cursive;
+  font-size: $l-size;
+  font-weight: bolder;
+  line-height: $l-size;
+  margin: 0;
+  padding: $s-size 0 0 $s-size;
+  width: 100%
+}
