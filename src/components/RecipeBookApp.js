@@ -138,7 +138,7 @@ export default class RecipeBookApp extends React.Component {
           openEditRecipeModal={this.openEditRecipeModal}
           handleCloseEditModal={this.handleCloseEditModal}
         />
-        <Slide direction="down" in={true} mountOnEnter unmountOnExit style={{ transitionDelay: 1400}}><button
+        <Slide direction="down" in={true} mountOnEnter unmountOnExit style={{ transitionDelay: 1600}}><button
           className='container__add-recipe-button'
           name='add-recipe'
           onClick={this.handleAdd}
