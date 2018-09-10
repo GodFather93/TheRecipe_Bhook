@@ -3,13 +3,14 @@ import Header from './Header';
 import Recipes from './Recipes';
 import AddRecipeModal from './AddRecipeModal';
 import EditRecipeModal from './EditRecipeModal';
-
+import Zoom from '@material-ui/core/Zoom';
+import Slide from '@material-ui/core/Slide';
 export default class RecipeBookApp extends React.Component {
   state = {
     addModalOpen: false,
     recipes: [
       {
-        name: 'Chilli Rice',
+        name: 'Chilli rice',
         ingredients: 'brown rice, minced beef, onions, chilli powder, jalapenos, too much cumin, cocoa powder, kidney beans, corn, sour cream, cerveza',
         visible: false,
         editModalOpen: false
@@ -122,10 +123,13 @@ export default class RecipeBookApp extends React.Component {
     this.setState(() => (stateCopy))
 
   }
+
+
   render() {
     return (
       <div className="container">
         <Header />
+
         <Recipes
           {...this.state}
           handleVisibility={this.handleVisibility}
@@ -134,13 +138,13 @@ export default class RecipeBookApp extends React.Component {
           openEditRecipeModal={this.openEditRecipeModal}
           handleCloseEditModal={this.handleCloseEditModal}
         />
-        <button
+        <Slide direction="down" in={true} mountOnEnter unmountOnExit style={{ transitionDelay: 1400}}><button
           className='container__add-recipe-button'
           name='add-recipe'
           onClick={this.handleAdd}
         >
           Add Recipe
-        </button>
+        </button></Slide>
         <AddRecipeModal
           {...this.state}
           handleCloseAdd={this.handleCloseAdd}

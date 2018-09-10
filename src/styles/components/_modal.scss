@@ -5,6 +5,7 @@
   max-width: 100rem;
   outline: none;
   padding: $l-size;
+  border-radius: 25px
 }
 
 .ReactModalPortal > div {
@@ -36,6 +37,7 @@
 
 
 .modal__body {
+
   font-size: 2rem;
   font-weight: 300;
   margin: 0 0 $xl-size 0;
@@ -60,6 +62,7 @@
 }
 
 .modal__confirm-button {
+  border-radius: 25px;
   background-color: $lettuce;
   border: 0;
   border-bottom: 3px solid darken($lettuce, 10%);
@@ -70,12 +73,15 @@
   font-weight: bolder;
   padding: $xxs-size;
   margin-top: $xs-size;
+
   width: 100%;
 }
 
 .modal__reject-button {
   background-color: $strawb;
+  border-radius: 25px;
   border: 0;
+  border-color: $strawb;
   border-bottom: 3px solid darken($strawb, 10%);
   color: $dark-blue;
   cursor: pointer;

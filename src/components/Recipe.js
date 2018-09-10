@@ -17,7 +17,7 @@ return (
           props.handleVisibility(props.index)
         }}
       >
-        {props.name} 
+        {props.name}
       </button>
       {props.visible && <Ingredients {...props} />}
       <div className="recipe__button-bar">

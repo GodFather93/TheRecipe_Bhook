@@ -1,9 +1,13 @@
 import React from 'react';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import Zoom from '@material-ui/core/Zoom';
 
 const Header = (props) => {
   return (
       <div>
-      <h1 className="header__text">| The ~x Cook x~  Bhook |</h1>
+<Zoom in={true} style={{ transitionDelay: 800 }}>
+      <h1 className="header__text"><LinearProgress color="secondary" />| The ~x Cook x~  Bhook |
+     </h1></Zoom>
       </div>
   )
 }
